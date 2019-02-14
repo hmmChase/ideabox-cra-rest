@@ -9,17 +9,19 @@ const database = require('knex')(config);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/build')));
-  app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-  });
-} else {
-  app.use(express.static(path.join(__dirname, '../client/public')));
-  app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, '../client/public', 'index.html'));
-  });
-}
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static(path.join(__dirname, '../client/build')));
+//   app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+//   });
+// } else {
+//   app.use(express.static(path.join(__dirname, '../client/public')));
+//   app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname, '../client/public', 'index.html'));
+//   });
+// }
 
 app.set('port', process.env.PORT || 3001);
 app.listen(app.get('port'), () =>
