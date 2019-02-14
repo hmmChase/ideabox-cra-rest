@@ -9,6 +9,7 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.5",
     "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
@@ -28,8 +29,7 @@
   ],
   "devDependencies": {
     "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.9.1",
-    "redux-devtools-extension": "^2.13.8"
+    "enzyme-adapter-react-16": "^1.9.1"
   },
   "proxy": "http://localhost:3001/"
 }
