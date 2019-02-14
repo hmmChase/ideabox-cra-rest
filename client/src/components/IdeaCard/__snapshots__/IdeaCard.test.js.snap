@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IdeaCard matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <IdeaCard
+    created_at="2018-11-26T23:48:35.890Z"
+    dispatchAddIdea={[MockFunction]}
+    dispatchDeleteIdea={[MockFunction]}
+    dispatchUpdateIdea={[MockFunction]}
+    id={1}
+    idea="If you dig it, do it. If you dig it a lot, do it twice."
+    stateIdeas={
+      Array [
+        Object {
+          "id": 1,
+          "idea": "mock idea",
+        },
+      ]
+    }
+    updated_at="2018-11-26T23:48:35.890Z"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="ideaCardContent"
+      >
+        <button
+          className="deleteBtn"
+          onClick={[Function]}
+        >
+          X
+        </button>
+        <p
+          className="ideaCardText"
+          contentEditable={true}
+          onInput={[Function]}
+          suppressContentEditableWarning={true}
+        >
+          If you dig it, do it. If you dig it a lot, do it twice.
+        </p>
+      </div>,
+      "className": "IdeaCard",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <button
+            className="deleteBtn"
+            onClick={[Function]}
+          >
+            X
+          </button>,
+          <p
+            className="ideaCardText"
+            contentEditable={true}
+            onInput={[Function]}
+            suppressContentEditableWarning={true}
+          >
+            If you dig it, do it. If you dig it a lot, do it twice.
+          </p>,
+        ],
+        "className": "ideaCardContent",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "X",
+            "className": "deleteBtn",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "X",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "If you dig it, do it. If you dig it a lot, do it twice.",
+            "className": "ideaCardText",
+            "contentEditable": true,
+            "onInput": [Function],
+            "suppressContentEditableWarning": true,
+          },
+          "ref": null,
+          "rendered": "If you dig it, do it. If you dig it a lot, do it twice.",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "li",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="ideaCardContent"
+        >
+          <button
+            className="deleteBtn"
+            onClick={[Function]}
+          >
+            X
+          </button>
+          <p
+            className="ideaCardText"
+            contentEditable={true}
+            onInput={[Function]}
+            suppressContentEditableWarning={true}
+          >
+            If you dig it, do it. If you dig it a lot, do it twice.
+          </p>
+        </div>,
+        "className": "IdeaCard",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <button
+              className="deleteBtn"
+              onClick={[Function]}
+            >
+              X
+            </button>,
+            <p
+              className="ideaCardText"
+              contentEditable={true}
+              onInput={[Function]}
+              suppressContentEditableWarning={true}
+            >
+              If you dig it, do it. If you dig it a lot, do it twice.
+            </p>,
+          ],
+          "className": "ideaCardContent",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "X",
+              "className": "deleteBtn",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "X",
+            "type": "button",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "If you dig it, do it. If you dig it a lot, do it twice.",
+              "className": "ideaCardText",
+              "contentEditable": true,
+              "onInput": [Function],
+              "suppressContentEditableWarning": true,
+            },
+            "ref": null,
+            "rendered": "If you dig it, do it. If you dig it a lot, do it twice.",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "li",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;

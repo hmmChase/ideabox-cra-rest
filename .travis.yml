@@ -1,0 +1,9 @@
+language: node_js
+node_js: '9'
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database ideabox;' -U postgres
+  - psql -c 'create database ideabox_test;' -U postgres
+notifications:
+  email: false
