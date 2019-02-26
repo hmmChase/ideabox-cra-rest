@@ -33,7 +33,7 @@ export class IdeaCard extends Component {
 
   render() {
     return (
-      <li className="IdeaCard">
+      <li className="ideaCard">
         <div className="ideaCardContent">
           <button
             className="deleteBtn"
