@@ -37,16 +37,15 @@ export class IdeaCard extends Component {
         <div className="ideaCardContent">
           <button
             className="deleteBtn"
-            onClick={event => this.handleClickDeleteBtn(event)}
-          >
+            type="button"
+            onClick={event => this.handleClickDeleteBtn(event)}>
             X
           </button>
           <p
             className="ideaCardText"
             contentEditable={true}
             suppressContentEditableWarning={true}
-            onInput={event => this.handleInputIdeaCard(event)}
-          >
+            onInput={event => this.handleInputIdeaCard(event)}>
             {this.state.prevIdea}
           </p>
         </div>

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as thunk from '../../thunks';
 import './IdeaCardForm.css';
+import ideaboxImg from '../../assets/images/ideabox.png';
 
 export class IdeaCardForm extends Component {
   constructor(props) {
@@ -38,18 +39,18 @@ export class IdeaCardForm extends Component {
     return (
       <form
         className="IdeaCardForm"
-        onSubmit={event => this.handleSubmitIdeaForm(event)}
-      >
-        <input
+        onSubmit={event => this.handleSubmitIdeaForm(event)}>
+        <img src={ideaboxImg} alt="ideabox" />
+        <textarea
           className="IdeaCardInput"
           name="idea"
           type="text"
-          placeholder="Enter idea"
+          placeholder="What's on your mind?"
           value={this.state.idea}
           onChange={event => this.handleChangeIdeaInput(event)}
         />
         <button type="submit" disabled={this.state.isSubmitDisabled}>
-          Add idea
+          Add Idea
         </button>
       </form>
     );

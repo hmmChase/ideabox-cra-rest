@@ -8,6 +8,7 @@ const App = () => (
   <main className="App">
     <header className="App-header">
       <h1>IdeaBox</h1>
+      <IdeaCardForm />
     </header>
     <Switch>
       <Route
@@ -15,7 +16,6 @@ const App = () => (
         path="/"
         render={() => (
           <div>
-            <IdeaCardForm />
             <IdeaContainer />
           </div>
         )}

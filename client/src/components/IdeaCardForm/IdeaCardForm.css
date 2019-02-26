@@ -1,0 +1,25 @@
+form {
+position: relative;display: flex;
+width: 80%;
+max-width: 800px;
+}
+
+img {
+  position: absolute;
+  top: -60px;
+  left: -45px;
+  width: 100px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  outline: none;
+}
+
+button {
+  width: 60px;
+  border: none;
+  background-color: #fffacd;
+}
