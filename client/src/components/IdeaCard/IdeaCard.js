@@ -34,21 +34,18 @@ export class IdeaCard extends Component {
   render() {
     return (
       <li className="ideaCard">
-        <div className="ideaCardContent">
-          <button
-            className="deleteBtn"
-            type="button"
-            onClick={event => this.handleClickDeleteBtn(event)}>
-            X
-          </button>
-          <p
-            className="ideaCardText"
-            contentEditable={true}
-            suppressContentEditableWarning={true}
-            onInput={event => this.handleInputIdeaCard(event)}>
-            {this.state.prevIdea}
-          </p>
-        </div>
+        <button
+          className="deleteBtn"
+          type="button"
+          onClick={event => this.handleClickDeleteBtn(event)}
+        />
+        <p
+          className="ideaCardText"
+          contentEditable={true}
+          suppressContentEditableWarning={true}
+          onInput={event => this.handleInputIdeaCard(event)}>
+          {this.state.prevIdea}
+        </p>
       </li>
     );
   }

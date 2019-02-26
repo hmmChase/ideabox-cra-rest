@@ -5,12 +5,6 @@
   margin: 20px;
 }
 
-.ideaCardContent {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-
 .ideaCardText {
   text-align: left;
   width: 100%;
@@ -31,8 +25,4 @@
   border: none;
   cursor: pointer;
   border-radius: 50%;
-}
-
-[contenteditable='true']:focus {
-  outline: none;
 }
