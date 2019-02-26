@@ -18,9 +18,9 @@ export class IdeaContainer extends Component {
   };
 
   displayIdeaCards = () =>
-    this.props.stateIdeas
-      .map(idea => <IdeaCard key={'ideaCard' + idea.id} {...idea} />)
-      .sort((a, b) => b.props.id - a.props.id);
+    this.props.stateIdeas.map(idea => (
+      <IdeaCard key={'ideaCard' + idea.id} {...idea} />
+    ));
 
   render() {
     return (
