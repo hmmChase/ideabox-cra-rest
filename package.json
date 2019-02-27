@@ -8,7 +8,7 @@
     "backend": "cd backend && npm start",
     "frontend": "cd frontend && npm start",
     "app": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
-    "heroku-postbuild": "cd frontend && npm install && npm run build && cd.. && cd backend && knex migrate:latest && knex seed:run"
+    "heroku-postbuild": "cd frontend && npm install && npm run build && cd .. && cd backend && knex migrate:latest && knex seed:run"
   },
   "repository": {
     "type": "git",
