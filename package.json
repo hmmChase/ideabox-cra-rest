@@ -1,26 +1,27 @@
 {
-  "name": "server",
+  "name": "ideabox-cra-rest",
   "version": "1.0.0",
   "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "cross-env NODE_ENV=test mocha **/*.test.js --exit",
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm start",
+    "app": "concurrently --kill-others-on-fail \"npm run backend\" \"npm run frontend\"",
     "heroku-postbuild": "cd client && npm install && npm run build && knex migrate:latest && knex seed:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmmChase/ideabox-cra-rest.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "knex": "^0.16.3",
-    "pg": "^7.8.0"
+  "bugs": {
+    "url": "https://github.com/hmmChase/ideabox-cra-rest/issues"
   },
+  "homepage": "https://github.com/hmmChase/ideabox-cra-rest#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "chai-http": "^4.2.1",
-    "mocha": "^5.2.0"
+    "concurrently": "^4.1.0"
   }
 }
